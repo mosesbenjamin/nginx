@@ -30,3 +30,7 @@
 #### Restricting access with the "location" directive and regex
 
 - location ~ <regex-goes-here>; next specify a return response
+
+#### Aliasing
+
+- Perform aliasing with proxy_pass
