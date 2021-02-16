@@ -22,7 +22,11 @@
 
 #### Serving content from an outside directory
 
-- Use the "locations" directory and specify path to the directory
+- Use the "location" directive to specify path to the directory
 - Run: nginx -s reload
 - Visit browser and specify path to the outside directory. The server should return a 403 error
 - Specifying the full path however, would serve the content in the directory (i.e adding the filename with its extension)
+
+#### Restricting access with the "location" directive and regex
+
+- location ~ <regex-goes-here>; next specify a return response
