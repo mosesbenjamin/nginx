@@ -4,7 +4,7 @@
 - cd .etc/nginx
 - Delete the content the existing nginx.conf file and write one from scratch
 
-### To make nginx a static web server
+### To make nginx a static web server (see nginx_as_static_web_server.conf file)
 
 #### Serving a single directory
 
@@ -34,3 +34,7 @@
 #### Aliasing
 
 - Perform aliasing with proxy_pass
+
+### NginX as a Layer7 Proxy (see nginx_as_layer7_proxy.conf)
+
+- Specifying a load-balancing algorithm, such as ip_hash, routes request to a single server/endpoint everytime.
